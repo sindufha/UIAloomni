@@ -8,6 +8,7 @@ public class Dashboard extends javax.swing.JFrame {
 
     public Dashboard() {
         initComponents();
+        
         dashbor.setIconTextGap(16);
         bJurusan.setIconTextGap(16);
         bKelas.setIconTextGap(16);
@@ -15,8 +16,6 @@ public class Dashboard extends javax.swing.JFrame {
         bSiswa.setIconTextGap(16);
         bAbout.setIconTextGap(16);
         bLogout.setIconTextGap(16);
-        
-        
     }
 
     @SuppressWarnings("unchecked")

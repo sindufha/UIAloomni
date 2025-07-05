@@ -1,6 +1,7 @@
 package alumni202457201062;
 
 import com.formdev.flatlaf.FlatLightLaf;
+import javax.swing.JFrame;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
@@ -9,6 +10,7 @@ public class Logout extends javax.swing.JFrame {
     public Logout() {
         initComponents();
         setTitle("Konfirmasi");
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
     @SuppressWarnings("unchecked")
@@ -106,7 +108,8 @@ public class Logout extends javax.swing.JFrame {
 
     private void bYesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bYesActionPerformed
         // TODO add your handling code here:
-        new Dashboard().dispose();
+        System.exit(0);
+        new Dashboard().setVisible(false);
         new LoginForm().setVisible(true);
     }//GEN-LAST:event_bYesActionPerformed
     public static void main(String args[]) {
